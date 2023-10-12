@@ -1,0 +1,6 @@
+"Sno","Country","State","City","Branchname","QRCode","AssetCode","DeviceType","Description","InvoiceNo","InvoiceDate","Qty","Amount","CGST","SGST","Warranty","ExpiryDate","AssetClass"
+"1433","India","Tamilnadu","Chennai","Athulya-Corporate-Office","","ATH-IND-TN-CHN-COR-1412","Mouse-Wireless","Dell Optical Mouse wireless WM118","546","2023-08-31","1","677.97","61.02","61.02","1","2024-08-31","4"
+"1411","India","Tamilnadu","Chennai","Athulya-Corporate-Office","","ATH-IND-TN-CHN-COR-1411","Laptop","Thinkpad Lenova L471","","","1","","","","","","4"
+"1410","India","Tamilnadu","Chennai","Athulya-Corporate-Office","","ATH-IND-TN-CHN-COR-1410","Laptop","Thinkpad Lenova L471","","","1","","","","","","4"
+"826","India","Tamilnadu","Chennai","Athulya-Corporate-Office","ATH-2023-852","ATH-IND-TN-CHN-COR-826","Mouse","Mouse","SMB23-24/011","26-04-2023","1","5084.75","457.627","457.627","1","26-04-2024","4"
+"43","India","Tamilnadu","Chennai","Athulya-Corporate-Office","ATH-2023-1178","ATH-IND-TN-CHN-COR-43","Laptop","HP Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz, 1992 Mhz, 2 Core(s), 4 Logical Processor(s)","","01-01-2018","1","","","","1","01-01-2019","4"
