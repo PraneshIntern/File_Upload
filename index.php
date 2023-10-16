@@ -155,7 +155,7 @@ if (isset($_POST['submit']) != "") {
           <th align="Center">Date</th>
           <th align="center">Action</th>
           <th align="center">View</th>
-          <th align="center">Print</th>
+           <th align="center">Print</th>
 
 
         </tr>
@@ -184,19 +184,12 @@ if (isset($_POST['submit']) != "") {
               <a href="download.php?filename=<?php echo $name; ?>&f=<?php echo $row['fname'] ?>">Download</a>
             </button>
           </td>
-          
-          
           <td>
     <button class="btn btn-success view-btn" data-fname="<?php echo $row['fname']; ?>">View</button>
 </td>
-
-
 <td>
     <button class="btn btn-success print-btn" data-fname="<?php echo $row['fname']; ?>">Print</button>
 </td>
-
-
-
         </tr>
       <?php } ?>
     </table>
