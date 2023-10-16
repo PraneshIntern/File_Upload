@@ -155,6 +155,7 @@ if (isset($_POST['submit']) != "") {
           <th align="Center">Date</th>
           <th align="center">Action</th>
           <th align="center">View</th>
+           <th align="center">Print</th>
 
 
         </tr>
@@ -183,11 +184,12 @@ if (isset($_POST['submit']) != "") {
               <a href="download.php?filename=<?php echo $name; ?>&f=<?php echo $row['fname'] ?>">Download</a>
             </button>
           </td>
-          
           <td>
     <button class="btn btn-success view-btn" data-fname="<?php echo $row['fname']; ?>">View</button>
 </td>
-
+<td>
+    <button class="btn btn-success print-btn" data-fname="<?php echo $row['fname']; ?>">Print</button>
+</td>
         </tr>
       <?php } ?>
     </table>
@@ -198,6 +200,20 @@ if (isset($_POST['submit']) != "") {
   <script src="js/jquery.js" type="text/javascript"></script>
   <script src="js/bootstrap.js" type="text/javascript"></script>
   <script>
+    $('.print-btn').on('click', function() {
+            var fname = $(this).data('fname');
+            var fileURL = 'upload/' + fname;
+
+            // Open the file in a new tab
+            var newWindow = window.open(fileURL, '_blank');
+            
+            // Trigger the print dialog
+            if (newWindow) {
+                newWindow.onload = function() {
+                    newWindow.print();
+                }
+            }
+        });
     const cityDropdown = document.getElementById("city");
     const branchDropdown = document.getElementById("branch");
     const stateDropdown = document.getElementById("state");
