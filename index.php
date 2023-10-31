@@ -1,6 +1,7 @@
 <?php
 $conn = new PDO('mysql:host=localhost; dbname=demo', 'root', '') or die(mysqli_connect_errno());
 $ok = 34;
+$ok = 34222;
 if (isset($_POST['submit']) != "") {
     $name = $_FILES['file']['name'];
     $size = $_FILES['file']['size'];
